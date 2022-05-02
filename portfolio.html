@@ -12,8 +12,7 @@
            position: relative;
            
            
-          
-        }
+          }
         
         .topnav {
             background-color:gray ;
@@ -24,17 +23,47 @@
              color:purple;
              text-align: center;
              padding: 13px 15px;
-             font-size: 15px;  
+             font-size: 15px; 
+             animation: movedown 1s linear 1;
+             animation-delay: 1s;
+             visibility: hidden;
+             animation-fill-mode: forwards;
+        }
+        @keyframes movedown{
+                0%{
+                    transform: translate(-100px);
+                    visibility: visible;
+                }
+                100%{
+                    transform: translate(0);
+                    visibility: visible;
+                }
         }
         .search-box{
             text-align: right;
             padding: 13px 15px;
             border-bottom-style: double;
+            animation: movedown 1s linear 1;
+            animation-delay: 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
-        .topnav a:hover {
-                 background-color: palevioletred;
-                 color: black;
+        @keyframes movedown{
+                0%{
+                    transform: translate(-100px);
+                    visibility: visible;
+                }
+                100%{
+                    transform: translate(0);
+                    visibility: visible;
+                }
         }
+        .topnav a:hover{
+            background-color: white;
+            color: black;
+
+        }
+    
         .topnav a.active {
                  background-color: lightslategray;
                  color: pink;
@@ -46,18 +75,47 @@
             background-color: lightslategray;
             padding-top: 20px;
             padding-bottom: 8px;
+            animation: movedown 1s linear 1;
+            animation-delay: 3s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
           
         }
-        #container{
+        @keyframes movedwn{
+                0%{
+                    transform: translate(-100px);
+                    visibility: visible;
+                }
+                100%{
+                    transform: translate(0);
+                    visibility: visible;
+                }
+        }
+        .container{
             padding-top: 8px;
             color: blueviolet;
             margin-bottom: 30px;
             background-image: url(./images/bgp.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: 100% 100%
+            background-size: 100% 100%;
+            animation: movedown 1s linear 1;
+            animation-delay: 4s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
             
         }
+        @keyframes movedown{
+                0%{
+                    transform: translate(-100px);
+                    visibility: visible;
+                }
+                100%{
+                    transform: translate(0);
+                    visibility: visible;
+                }
+        }
+
         h2{
             color: black;
             text-align: left;
@@ -71,19 +129,23 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
+            animation: movedown 1s linear 1;
+            animation-delay: 2s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
+            
         }
-        .pic {
-             animation: movedown 1s linear 1;
-        }
-        @keyframes movedown{ 
-            0%{
-                transform: translateY(-100);
-            }
-            100%{
-                transform: translateY(0);
-            }
-        }
+        @keyframes movedown{
+                0%{
+                    transform: translate(-100px);
+                    visibility: visible;
+                }
+                100%{
+                    transform: translate(0);
+                    visibility: visible;
+                }
         
+        }
         .footer{
             position: fixed;
             left: 0;
@@ -120,26 +182,29 @@
            </div>
         </div>
   
-     <div id="image">
-            <img src="./images/port-image.jpg"  class="pic" width="450" height="350" >
+       <div id="image">
+        <img src="./images/port-image.jpg" width="450"height="350">
               <a href="Profile-pic">Profile picture</a>
-     </div>
+        </div>
          
         <div id="main-side">
+
             <h1>Nomeh Chinagorom Esther</h1>
         </div>
         
 
-        <div id="container">
+        <div class="container">
 
             <div class="work">
              <hr>
              <h2>Work experience:</h2>
                 <ul>
-                    <li>None </li>  
+                    <li>I am a self employed baker</li> 
+                    <li>I worked for an importation and exportation company</li> 
+                    <li>I worked as a teacher's assistance during my Bsc</li>
                 </ul>
             
-                <hr>
+                
             
             </div>
 
@@ -153,7 +218,7 @@
                 <li>currently a student in Epicode boothcamp <a href="EPICODE.COM">@EPICODE.COM</a></li>
               </ul>
             
-             <hr>
+             
             </div>
 
             <div class="Nationality">
@@ -164,7 +229,7 @@
                  </ul>
             
             
-               <hr>
+               
 
             </div>
 
@@ -174,7 +239,7 @@
                    <li>I am 25 years old</li>
                </ul>
 
-             <hr>
+             
             
             </div>
 
@@ -186,7 +251,7 @@
                  <li>+86 15041266401</li>
               </ul>
 
-             <hr>
+             
                 
             </div>
 
@@ -200,8 +265,16 @@
                  <li>dancing</li>
                </ul>
 
-             <hr>
+             
             
+            </div>
+            <div class="Interests">
+                 <h2>Interests</h2>
+                   <ul>
+                      <li>Nature</li>
+                      <li>I love animals</li>
+                      <li>traveling the globe</li>
+                 </ul>
             </div>
 
         </div>     
@@ -213,8 +286,18 @@
               <p>Privacy policy</p>
         </div>
         
-      
-    
- 
+        <div id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>HOBBIES</th>
+                        <th>INTERESTS</th>
+                    </tr>
+                </thead>
+         
+        </div>
+      <script>
+          alert("EPICODE is amazing!");
+      </script>
     </body>
 </html> 
