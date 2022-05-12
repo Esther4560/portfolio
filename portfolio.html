@@ -17,6 +17,10 @@
         .topnav {
             background-color:gray ;
             overflow: hidden;
+            animation: movedown 1s linear 1;
+            animation-delay: 1s;
+            visibility: hidden;
+            animation-fill-mode: forwards;
         }
         .topnav a {
              float: left;
@@ -24,10 +28,7 @@
              text-align: center;
              padding: 13px 15px;
              font-size: 15px; 
-             animation: movedown 1s linear 1;
-             animation-delay: 1s;
-             visibility: hidden;
-             animation-fill-mode: forwards;
+           
         }
         @keyframes movedown{
                 0%{
@@ -39,6 +40,13 @@
                     visibility: visible;
                 }
         }
+        
+        .topnav a:hover{
+            background-color: white;
+            color: black;
+
+        }
+
         .search-box{
             text-align: right;
             padding: 13px 15px;
@@ -57,12 +65,7 @@
                     transform: translate(0);
                     visibility: visible;
                 }
-        }
-        .topnav a:hover{
-            background-color: white;
-            color: black;
-
-        }
+            }
     
         .topnav a.active {
                  background-color: lightslategray;
